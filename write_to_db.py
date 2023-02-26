@@ -27,7 +27,7 @@ authors[3].books.append(books[4])
 authors[4].books.append(books[4])
 
 # Connect to the activities database
-engine = create_engine('sqlite:///activities.sqlite', echo=True)
+engine = create_engine('sqlite:///library.sqlite', echo=True)
 
 # Create a session and add the people to the database
 with Session(engine) as sess:
