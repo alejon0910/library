@@ -32,4 +32,5 @@ engine = create_engine('sqlite:///library.sqlite', echo=True)
 # Create a session and add the people to the database
 with Session(engine) as sess:
     sess.add_all(books)
+    sess.add_all(publishers)
     sess.commit()
